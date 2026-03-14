@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-10T22:43:29 IST" name="Suite" finished-at="2026-03-10T22:43:51 IST" duration-ms="21463">
+    <groups>
+      <group name="Place Multiple Orders">
+        <method signature="MultipleDataTests.placeMultipleOrders(java.lang.String)[pri:0, instance:sdf.tests.MultipleDataTests@7b2bbc3]" name="placeMultipleOrders" class="sdf.tests.MultipleDataTests"/>
+      </group> <!-- Place Multiple Orders -->
+    </groups>
+    <test started-at="2026-03-10T22:43:29 IST" name="Place Multiple Orders" finished-at="2026-03-10T22:43:51 IST" duration-ms="21463">
+      <class name="sdf.tests.MultipleDataTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sdf.tests.MultipleDataTests@7b2bbc3]" started-at="2026-03-10T22:43:29 IST" name="setUp" finished-at="2026-03-10T22:43:31 IST" duration-ms="1538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="placeMultipleOrders(java.lang.String)[pri:0, instance:sdf.tests.MultipleDataTests@7b2bbc3]" started-at="2026-03-10T22:43:31 IST" name="placeMultipleOrders" data-provider="items" finished-at="2026-03-10T22:43:42 IST" duration-ms="10620" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[adidas original]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at org.testng.Assert.assertFalse(Assert.java:89)
+at sdf.tests.MultipleDataTests.placeMultipleOrders(MultipleDataTests.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeMultipleOrders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sdf.tests.MultipleDataTests@7b2bbc3]" started-at="2026-03-10T22:43:42 IST" name="tearDown" finished-at="2026-03-10T22:43:42 IST" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sdf.tests.MultipleDataTests@7b2bbc3]" started-at="2026-03-10T22:43:42 IST" name="setUp" finished-at="2026-03-10T22:43:43 IST" duration-ms="844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="placeMultipleOrders(java.lang.String)[pri:0, instance:sdf.tests.MultipleDataTests@7b2bbc3]" started-at="2026-03-10T22:43:43 IST" name="placeMultipleOrders" data-provider="items" finished-at="2026-03-10T22:43:50 IST" duration-ms="7321" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[zara coat 3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at org.testng.Assert.assertFalse(Assert.java:89)
+at sdf.tests.MultipleDataTests.placeMultipleOrders(MultipleDataTests.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeMultipleOrders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sdf.tests.MultipleDataTests@7b2bbc3]" started-at="2026-03-10T22:43:50 IST" name="tearDown" finished-at="2026-03-10T22:43:51 IST" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- sdf.tests.MultipleDataTests -->
+    </test> <!-- Place Multiple Orders -->
+  </suite> <!-- Suite -->
+</testng-results>
