@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Multiple Tests (Invalid Login and Placeorder)(failed)">
-    <groups>
-      <run>
-        <include name="Login Tests"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sdf.tests.MultipleTests">
+      <class name="sdf.tests.PlaceOrderTest">
         <methods>
           <include name="tearDown"/>
+          <include name="placeOrderTest"/>
           <include name="setUp"/>
-          <include name="invalidLoginTest"/>
         </methods>
-      </class> <!-- sdf.tests.MultipleTests -->
+      </class> <!-- sdf.tests.PlaceOrderTest -->
     </classes>
-  </test> <!-- Multiple Tests (Invalid Login and Placeorder)(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -17,7 +17,9 @@ public class ProductsPage extends BasePage{
 			//String productToBuy = "Adidas Original";
 			
 			//Select the product
-			public void selectProductToBuy(String productToBuy) {
+			public void selectProductToBuy(String productToBuy)
+			{
+				
 			System.out.println("need to select "+productToBuy);
 			
 			//will wait for the elements to appear on the screen before acting on them
