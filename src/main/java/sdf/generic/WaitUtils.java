@@ -27,6 +27,7 @@ public class WaitUtils {
     public void waitForElementToAppear(WebElement e)
     {
     	wait.until(ExpectedConditions.visibilityOf(e));
+    	
     }
     
     public void waitForElementToAppear(By locator)

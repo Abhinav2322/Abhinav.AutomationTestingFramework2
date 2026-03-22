@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="sdf.listeners.Listeners"/>
-  </listeners>
-  <test thread-count="5" parallel="tests" name="Place Multiple Orders(failed)">
+  <test thread-count="5" parallel="tests" name="Multiple Tests (Invalid Login and Placeorder)(failed)">
+    <groups>
+      <run>
+        <include name="Login Tests"/>
+      </run>
+    </groups>
     <classes>
-      <class name="sdf.tests.MultipleDataTests">
+      <class name="sdf.tests.MultipleTests">
         <methods>
           <include name="tearDown"/>
-          <include name="placeMultipleOrders" invocation-numbers="0 1"/>
           <include name="setUp"/>
+          <include name="invalidLoginTest"/>
         </methods>
-      </class> <!-- sdf.tests.MultipleDataTests -->
+      </class> <!-- sdf.tests.MultipleTests -->
     </classes>
-  </test> <!-- Place Multiple Orders(failed) -->
+  </test> <!-- Multiple Tests (Invalid Login and Placeorder)(failed) -->
 </suite> <!-- Failed suite [Suite] -->
