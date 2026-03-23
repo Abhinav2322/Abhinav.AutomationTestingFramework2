@@ -45,6 +45,9 @@ public class WaitUtils {
     	wait.until(ExpectedConditions.invisibilityOf(e1));
     }
     
+    
+
+    
     public void waitForElementToDisappear(By locator1)
     {
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(locator1));
@@ -55,6 +58,14 @@ public class WaitUtils {
 			e.printStackTrace();
 		}
     }
+    
+    
+    public void waitForElementsToDisappear(List<WebElement> elements)
+    {
+    wait.until(ExpectedConditions.invisibilityOfAllElements(elements));
+    }
+    
+    
     
     
 

@@ -35,7 +35,8 @@ public class CheckOutPage extends BasePage {
 				break;
 			}
 		}
-		
+		//waiting for dropdown list to disappear before we click on the place order button
+		wait.waitForElementsToDisappear(driver.findElements(countryDropDownOptionsLocator));
 		
 		//clicking on order
 		driver.findElement(By.cssSelector(".action__submit ")).click();
