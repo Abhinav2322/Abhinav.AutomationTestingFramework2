@@ -39,6 +39,7 @@ public class CheckOutPage extends BasePage {
 		wait.waitForElementsToDisappear(driver.findElements(countryDropDownOptionsLocator));
 		
 		//clicking on order
+		
 		driver.findElement(By.cssSelector(".action__submit ")).click();
 	}
 	

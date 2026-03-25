@@ -51,18 +51,14 @@ public class WaitUtils {
     public void waitForElementToDisappear(By locator1)
     {
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(locator1));
-    	try {
-			Thread.sleep(2000); //added for CI stability
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+    	
     }
     
     
     public void waitForElementsToDisappear(List<WebElement> elements)
     {
     wait.until(ExpectedConditions.invisibilityOfAllElements(elements));
+
     }
     
     
