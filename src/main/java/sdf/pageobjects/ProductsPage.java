@@ -24,7 +24,7 @@ public class ProductsPage extends BasePage{
 			
 			//will wait for the elements to appear on the screen before acting on them
 			wait.waitForElementsToAppear(productcards);
-			
+
 			
 			List<WebElement> products= driver.findElements(productcards);
 			System.out.println("multiple products found");
@@ -55,13 +55,15 @@ public class ProductsPage extends BasePage{
 			wait.waitForElementToDisappear(By.cssSelector(".ngx-spinner-overlay"));
 			
 			
-	
+			
 			
 			
 			}
 			
 			public void goToCart()
 			{
+				//waiting for the "product added to cart popup to disappear"
+				wait.waitForElementToDisappear(By.cssSelector("#toast-container"));
 				gf.goToCartPage();
 			}
 		   

@@ -1,14 +1,19 @@
 package sdf.generic;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+
 import org.openqa.selenium.WebDriver;
 
-public class GenericFunctions {
+
+
+
+
+public class GenericFunctions{
 	
 	WebDriver driver;
 	By cartbuttonlocator;
 	By orderbuttonlocator;
+	
 	
 	public GenericFunctions(WebDriver driver)
 	{
@@ -21,9 +26,9 @@ public class GenericFunctions {
 	
 	public void goToCartPage()
 	{
-		
-		//driver.findElement(cartbuttonlocator).click();
-		((JavascriptExecutor) driver).executeScript("arguments[0].click();", driver.findElement(cartbuttonlocator));
+		//wait.
+		driver.findElement(cartbuttonlocator).click();
+		//((JavascriptExecutor) driver).executeScript("arguments[0].click();", driver.findElement(cartbuttonlocator));
 		//added JavascriptExecutor for CI stability, click action failing normally
 	}
 	

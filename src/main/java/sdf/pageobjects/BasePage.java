@@ -8,7 +8,7 @@ import sdf.generic.WaitUtils;
 
 public class BasePage {
 	
-	 WebDriver driver;
+	WebDriver driver;
 	WaitUtils wait;
 	 GenericFunctions gf;
 	

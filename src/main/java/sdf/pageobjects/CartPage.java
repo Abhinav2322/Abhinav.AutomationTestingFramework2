@@ -24,8 +24,11 @@ public class CartPage extends BasePage{
 	{
 		System.out.println("navigated to cart page successfully");
 		
+		
+		
 		//waiting for the elements to appear before acting on them
 		wait.waitForElementsToAppear(cartItemsLocator);
+		
 		
 		List<WebElement> cartItems = driver.findElements(cartItemsLocator);
 		boolean match = false;

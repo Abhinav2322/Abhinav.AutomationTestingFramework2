@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sdf.tests.PlaceOrderTest">
+      <class name="sdf.tests.MultipleDataTests">
         <methods>
           <include name="tearDown"/>
-          <include name="placeOrderTest"/>
+          <include name="placeMultipleOrders" invocation-numbers="0 1"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- sdf.tests.PlaceOrderTest -->
+      </class> <!-- sdf.tests.MultipleDataTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
