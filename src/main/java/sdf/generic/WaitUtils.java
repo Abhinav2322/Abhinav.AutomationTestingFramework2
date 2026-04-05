@@ -61,6 +61,11 @@ public class WaitUtils {
 
     }
     
+    public void waitForElementToBeClickable(By locator)
+    {
+    	wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+    
     
     
     

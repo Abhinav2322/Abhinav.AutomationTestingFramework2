@@ -42,7 +42,9 @@ public class DriverFactory {
 
         }
         
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
+        driver.manage().window().setSize(new Dimension(1920, 1080));
+        System.out.println(driver.manage().window().getSize());
         return driver;
 
 }

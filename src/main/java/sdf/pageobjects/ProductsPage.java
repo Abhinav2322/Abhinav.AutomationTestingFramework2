@@ -3,6 +3,8 @@ package sdf.pageobjects;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 public class ProductsPage extends BasePage{
@@ -41,9 +43,27 @@ public class ProductsPage extends BasePage{
 			}
 			if (requiredProduct != null) {
 				
-			    requiredProduct.findElement(By.xpath(".//button[@style ='float: right;']")).click();
-			
-			}else {
+			    //requiredProduct.findElement(By.xpath(".//button[@style ='float: right;']")).click();
+				System.out.println("required product is : "+requiredProduct.getText());
+				//jsu.safeClick(requiredProduct , By.xpath(".//button[@style ='float: right;']"));
+				
+				try {
+					System.out.println("trying normal click  ");
+					requiredProduct.findElement(By.xpath(".//button[@style ='float: right;']")).click();
+				}
+				catch (ElementClickInterceptedException e) 
+				{
+					System.out.println("normal click failed, trying JS safe click");
+			        JavascriptExecutor js = (JavascriptExecutor) driver;
+			        js.executeScript(
+			                "arguments[0].scrollIntoView({block: 'center'});", 
+			                requiredProduct.findElement(By.xpath(".//button[@style ='float: right;']"))
+			                );
+			        js.executeScript("arguments[0].click();", requiredProduct.findElement(By.xpath(".//button[@style ='float: right;']")));
+			        System.out.println("JS safe click successful");
+			}
+		}
+				else {
 				
 			    System.out.println("Product not found.");
 			}

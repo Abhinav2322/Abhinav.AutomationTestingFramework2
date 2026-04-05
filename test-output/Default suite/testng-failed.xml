@@ -6,7 +6,7 @@
       <class name="sdf.tests.MultipleDataTests">
         <methods>
           <include name="tearDown"/>
-          <include name="placeMultipleOrders" invocation-numbers="0 1"/>
+          <include name="placeMultipleOrders" invocation-numbers="1"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- sdf.tests.MultipleDataTests -->

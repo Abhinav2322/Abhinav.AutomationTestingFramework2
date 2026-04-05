@@ -26,7 +26,7 @@ public class GenericFunctions{
 	
 	public void goToCartPage()
 	{
-		//wait.
+		
 		driver.findElement(cartbuttonlocator).click();
 		//((JavascriptExecutor) driver).executeScript("arguments[0].click();", driver.findElement(cartbuttonlocator));
 		//added JavascriptExecutor for CI stability, click action failing normally
