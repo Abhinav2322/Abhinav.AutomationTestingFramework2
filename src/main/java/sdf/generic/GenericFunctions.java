@@ -26,16 +26,15 @@ public class GenericFunctions{
 	
 	public void goToCartPage()
 	{
-		
+		JavaScriptUtils.scrollIntoView(driver, cartbuttonlocator);
 		driver.findElement(cartbuttonlocator).click();
-		//((JavascriptExecutor) driver).executeScript("arguments[0].click();", driver.findElement(cartbuttonlocator));
-		//added JavascriptExecutor for CI stability, click action failing normally
+	
 	}
 	
 	
 	public void goToOrdersPage()
 	{
-
+		
 		driver.findElement(orderbuttonlocator).click();
 	}
 	

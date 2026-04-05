@@ -14,14 +14,14 @@ public class BasePage {
 	//it would only be accessible to classes within this package. making it protected makes it accessible to all sub classes of this class in any
 	//package
 	 GenericFunctions gf;
-	 JavaScriptUtils jsu;
+	 
 	
 	public  BasePage()
 	{
 		this.driver=DriverManager.getDriver();
 		this.wait = new WaitUtils(driver);
 		this.gf = new GenericFunctions(driver);
-		this.jsu = new JavaScriptUtils(driver);
+		
 	}
 	
 	
