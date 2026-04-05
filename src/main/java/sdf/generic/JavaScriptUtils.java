@@ -32,6 +32,12 @@ public class JavaScriptUtils {
 	    );
 	}
 	
+	
+	
+	public static void scrollToTop(WebDriver driver) {
+	    ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0);");
+	}
+	
 	 
 	
 	

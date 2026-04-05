@@ -26,7 +26,7 @@ public class GenericFunctions{
 	
 	public void goToCartPage()
 	{
-		JavaScriptUtils.scrollIntoView(driver, cartbuttonlocator);
+		JavaScriptUtils.scrollToTop(driver);
 		driver.findElement(cartbuttonlocator).click();
 	
 	}
@@ -34,7 +34,7 @@ public class GenericFunctions{
 	
 	public void goToOrdersPage()
 	{
-		
+		JavaScriptUtils.scrollToTop(driver);
 		driver.findElement(orderbuttonlocator).click();
 	}
 	
